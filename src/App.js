@@ -11,7 +11,7 @@ import {
 
 // import all pages
 import Home from './Pages/Home/Home.js';
-import NewFeature from './Pages/NewFeature/NewFeature.js';
+import EventList from './Pages/EventList/EventList.js';
 
 const engine = new Styletron();
 
@@ -23,7 +23,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/newfeature" element={<NewFeature />} />
+              <Route path="/eventlist" element={<EventList />} />
             </Routes>
           </BrowserRouter>
         </BaseProvider>
