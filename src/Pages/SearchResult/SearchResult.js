@@ -8,29 +8,22 @@ import {
 } from "baseui/progress-steps";
 import { Combobox } from "baseui/combobox";
 import { useNavigate } from "react-router-dom";
-
 // Local imports
 import MockScreenshot from '../../Components/MockScreenshot/MockScreenshot.js';
-import Image from './SearchResult.png'; // another image is defined here using file path
+import Image from './searchresult.png'; // another image is defined here using file path
 import './SearchResult.css';
-
-
 function SearchResult() {
     const [stepState, setStepState] = useState(0);
     const [userAnswer, setUserAnswer] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
     const [searchResults, setSearchResults] = useState([]);
-
     let navigate = useNavigate();
-
-
     const handleSearch = (event) => {
 /*         const simulatedResults = [
             'Home',
             'Recent',
             'Marina Green',
           ]; */
-
         if (event.key === 'Enter') {
             /* setSearchResults(simulatedResults); */
             navigate('/loadingpage')
@@ -38,8 +31,7 @@ function SearchResult() {
                 navigate('/Schedules');
             }, 1000)
           }
-    }; 
-
+    };
     return (
         <div className='SearchResult page'>
             <MockScreenshot imageUrl={Image}> {/*each instance of MockScreenshot needs an image url passed like this */}
@@ -76,11 +68,12 @@ function SearchResult() {
             <Button size={SIZE.large} onClick={() => { navigate(`/schedules`) }} style={buttonStyle}>
                     {/*make sure navigate param matches path defined in App.js*/}
             </Button>
-
             </MockScreenshot>
         </div>
     );
 }
-
 export default SearchResult;
+
+
+
 
