@@ -30,7 +30,7 @@ function ShuttleSelection() {
         marginTop: '695px', // Adjust the margin-top value as needed
         marginLeft: '-150px',
         padding: '30px 250px',
-        //backgroundColor: 'transparent'
+        backgroundColor: 'transparent'
     }
     return (
         <div className='ShuttleSelection page'>
