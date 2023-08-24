@@ -11,13 +11,13 @@ import { useNavigate } from "react-router-dom";
 
 // Local imports
 import MockScreenshot from '../../Components/MockScreenshot/MockScreenshot.js';
-import Image from './searchresult.png'; // another image is defined here using file path
-import './SearchResult.css';
+import Image from './Schedules.png'; // another image is defined here using file path
+import './Schedules.css';
 
 // this is some random bullshit combination of Base UI components and logic to demonstrate what a UI might look like in React
 // since they don't care about backend you can probably just store persisting data in React state
 
-function SearchResult() {
+function Schedules() {
     const [stepState, setStepState] = useState(0);
     const [userAnswer, setUserAnswer] = useState('');
     let navigate = useNavigate();
@@ -29,4 +29,4 @@ function SearchResult() {
     );
 }
 
-export default SearchResult;
+export default Schedules;
