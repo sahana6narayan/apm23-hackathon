@@ -3,6 +3,7 @@ import { Client as Styletron } from 'styletron-engine-atomic';
 import { Provider as StyletronProvider } from 'styletron-react';
 import { LightTheme, BaseProvider } from 'baseui';
 
+
 import {
   BrowserRouter,
   Routes,
@@ -16,6 +17,7 @@ import SearchResult from './Pages/SearchResult/SearchResult.js';
 import Schedules from './Pages/Schedules/Schedules.js';
 import ShuttleSelection from './Pages/ShuttleSelection/ShuttleSelection.js';
 import Confirmation from './Pages/Confirmation/Confirmation.js';
+import LoadingPage from './Pages/LoadingPage/LoadingPage.js';
 
 
 const engine = new Styletron();
@@ -33,6 +35,7 @@ function App() {
               <Route path="/schedules" element={<Schedules />} />
               <Route path="/shuttleselection" element={<ShuttleSelection />} />
               <Route path="/confirmation" element={<Confirmation />} />
+              <Route path="/loadingpage" element={<LoadingPage />} />
             </Routes>
           </BrowserRouter>
         </BaseProvider>

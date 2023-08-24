@@ -1,7 +1,7 @@
 // Lib imports
 import React, { useState } from 'react';
 // Random imports from Base UI
-import { Button } from "baseui/button";
+import { Button, SIZE } from "baseui/button";
 import {
     ProgressSteps,
     Step
@@ -21,9 +21,18 @@ function Schedules() {
     const [stepState, setStepState] = useState(0);
     const [userAnswer, setUserAnswer] = useState('');
     let navigate = useNavigate();
+    const buttonStyle = {
+        marginTop: '260px', // Adjust the margin-top value as needed
+        marginLeft: '-150px',
+        padding: '50px 250px',
+        backgroundColor: 'transparent'
+    }
     return (
         <div className='SearchResult page'>
             <MockScreenshot imageUrl={Image}> {/*each instance of MockScreenshot needs an image url passed like this */}
+            <Button size={SIZE.large} onClick={() => { navigate(`/shuttleselection`) }} style={buttonStyle}>
+                    {/*make sure navigate param matches path defined in App.js*/}
+            </Button>
             </MockScreenshot>
         </div>
     );
