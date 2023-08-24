@@ -13,6 +13,7 @@ import {
 import Home from './Pages/Home/Home.js';
 import EventList from './Pages/EventList/EventList.js';
 import SearchResult from './Pages/SearchResult/SearchResult.js';
+import Schedules from './Pages/Schedules/Schedules.js';
 
 const engine = new Styletron();
 
@@ -25,7 +26,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/eventlist" element={<EventList />} />
-              <Route path="/SearchResult" element={<SearchResult />} />
+              <Route path="/searchresult" element={<SearchResult />} />
+              <Route path="/schedules" element={<Schedules />} />
             </Routes>
           </BrowserRouter>
         </BaseProvider>
