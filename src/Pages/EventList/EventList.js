@@ -18,9 +18,9 @@ function EventList() {
     const [userAnswer, setUserAnswer] = useState('');
     let navigate = useNavigate();
     const buttonStyle = {
-        marginTop: '830px', // Adjust the margin-top value as needed
-        marginLeft: '-200px',
-        padding: '30px 200px',
+        marginTop: '200px', // Adjust the margin-top value as needed
+        marginLeft: '-150px',
+        padding: '25px 250px',
         backgroundColor: 'transparent'
       };
     return (
