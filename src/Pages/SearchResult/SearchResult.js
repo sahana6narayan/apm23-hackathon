@@ -50,7 +50,7 @@ function SearchResult() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Where to?"
-                onKeyDown ={handleSearch}  
+                onKeyDown ={handleSearch}
             />
         </div>
         <div className="results-container">
@@ -60,8 +60,10 @@ function SearchResult() {
             </div>
             ))}
         </div>
-        </div> 
-
+        </div>
+            </MockScreenshot>
+        </div>
+    );
     const buttonStyle = {
         marginTop: '320px', // Adjust the margin-top value as needed
         marginLeft: '-150px',
@@ -81,3 +83,4 @@ function SearchResult() {
 }
 
 export default SearchResult;
+

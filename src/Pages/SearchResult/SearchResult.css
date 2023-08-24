@@ -11,9 +11,11 @@
 }
 
 .search-container {
-    padding-top: 175px; 
+    padding-top: 163px; 
     justify-content: flex-start;
     border: none;
     margin-right: 100px;
+    padding: 163px 45px;
+
   }
   

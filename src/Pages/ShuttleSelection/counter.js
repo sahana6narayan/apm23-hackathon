@@ -19,24 +19,26 @@ const Counter = () => {
         justifyContent: 'center', 
         width: '200px', 
         marginTop: '-165px', // Move the counter up by adjusting margin
-        marginLeft: '170px',
+        marginLeft: '220px',
         position: 'relative', 
     }
     const countStyle = {
         position: 'absolute',
-        top: '0%', // Vertically center the count
+        top: '-10%', // Vertically center the count
         center: '50%', // Position the count on the left side
         transform: 'translateY(-50%)', // Adjust to fully center the count
-        fontSize: '24px',
+        fontSize: '20px',
       };
     
       const buttonStyle = {
         padding: '0',
-        width: '40px',
-        height: '40px',
+        width: '30px',
+        height: '30px',
         fontSize: '18px',
         borderRadius: '50%',
         margin: '0 20px',
+        outline: 'none',
+        fontFamily: 'Impact', 
       };
 
 return (
