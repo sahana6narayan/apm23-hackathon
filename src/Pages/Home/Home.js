@@ -9,16 +9,16 @@ import Image from './home_screenshot.png'; // an image is defined here using fil
 function Home() {
     let navigate = useNavigate();
     const buttonStyle = {
-        marginTop: '840px', // Adjust the margin-top value as needed
-        marginLeft: '-600px',
-        padding: '30px 200px',
+        marginTop: '200px', // Adjust the margin-top value as needed
+        marginLeft: '-170px',
+        padding: '25px 100px',
         backgroundColor: 'transparent'
       };
     return (
         <div className='Home page'>
             <MockScreenshot imageUrl={Image}> {/*each instance of MockScreenshot needs an image url passed like this */}
                 <Button size={SIZE.large} onClick={() => { navigate(`/eventlist`) }} style={buttonStyle}>
-                    {/*make sure navigate param matches path defined in App.js*/}                    
+                    {/*make sure navigate param matches path defined in App.js*/}    
                 </Button>
             </MockScreenshot>
         </div>
