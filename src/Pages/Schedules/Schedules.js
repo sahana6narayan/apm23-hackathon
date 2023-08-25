@@ -24,7 +24,7 @@ function Schedules() {
     const buttonStyle = {
         marginTop: '260px', // Adjust the margin-top value as needed
         marginLeft: '-150px',
-        padding: '50px 250px',
+        padding: '80px 250px',
         backgroundColor: 'transparent'
     }
     return (

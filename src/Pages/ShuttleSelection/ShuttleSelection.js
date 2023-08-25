@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import MockScreenshot from '../../Components/MockScreenshot/MockScreenshot.js';
 import Image from './shuttleselection.png'; // another image is defined here using file path
 import './ShuttleSelection.css';
-import Counter from './counter.js';
+import CounterMoney from './counter.js';
 
 
 // this is some random bullshit combination of Base UI components and logic to demonstrate what a UI might look like in React
@@ -38,7 +38,7 @@ function ShuttleSelection() {
             <Button size={SIZE.large} onClick={() => { navigate(`/confirmation`) }} style={buttonStyle}>
                     {/*make sure navigate param matches path defined in App.js*/}
             </Button>
-            <Counter />
+            <CounterMoney />
             </MockScreenshot>
         </div>
     );

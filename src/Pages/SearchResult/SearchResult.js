@@ -10,8 +10,9 @@ import { Combobox } from "baseui/combobox";
 import { useNavigate } from "react-router-dom";
 // Local imports
 import MockScreenshot from '../../Components/MockScreenshot/MockScreenshot.js';
-import Image from './searchresult.png'; // another image is defined here using file path
+import Image from './SearchResult.png'; // another image is defined here using file path
 import './SearchResult.css';
+
 function SearchResult() {
     const [stepState, setStepState] = useState(0);
     const [userAnswer, setUserAnswer] = useState('');

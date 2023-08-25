@@ -18,6 +18,12 @@ function Confirmation() {
     const [stepState, setStepState] = useState(0);
     const [userAnswer, setUserAnswer] = useState('');
     let navigate = useNavigate();
+    const buttonStyle = {
+        marginTop: '380px', // Adjust the margin-top value as needed
+        marginLeft: '-190px',
+        padding: '25px 300px',
+        backgroundColor: 'transparent'
+      };
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter' | event.key === ' ') {
@@ -28,6 +34,9 @@ function Confirmation() {
     return (
         <div className='SearchResult page' onKeyDown={handleKeyDown} tabIndex={0}>
             <MockScreenshot imageUrl={Image}> 
+            <Button size={SIZE.large} onClick={() => { navigate(`/pickupcode`) }} style={buttonStyle}>
+                    {/*make sure navigate param matches path defined in App.js*/}    
+            </Button>
             </MockScreenshot>
         </div>
     );
